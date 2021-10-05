@@ -1,0 +1,88 @@
+/* =========================================
+
+      THEMING OF THE BOOTSTRAP COMPONENTS
+
+   =========================================
+
+    1 - NAVBAR
+    2 - BUTTONS
+    3 - TYPE
+    4 - PAGINATION
+    5 - UTILITIES
+    6 - FORMS
+    7 - CODE
+    8 - NAV
+    9 - CARD
+    10 - DROPDOWNS
+
+*/
+/*
+ * 1. NAVBAR
+ */
+ .navbar {
+    transition: all 0.3s;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+  
+  .navbar.active {
+    background: #fff;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 991.98px) {
+    .navbar {
+      background: #fff;
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+  .navbar-toggler {
+    color: #17141f;
+  }
+  /*
+ * 3. TYPE
+ */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #17141f;
+    background-color: #fff;
+  }
+  
+  a {
+    color: #5954cb;
+    text-decoration: none;
+  }
+  
+  a:hover, a:focus {
+    color: #3631a1;
+    text-decoration: underline;
+  }
+  /*
+* 8. NAV
+*/
+.nav-link {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: #17141f;
+  }
+  
+  .nav-link.disabled {
+    color: #6c757d;
+  }
+  
+  .nav-link.active {
+    color: #5954cb;
+  }
+  
+  .nav-tabs .nav-item {
+    margin-bottom: -1px;
+  }
+  
