@@ -60,6 +60,35 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
 }
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+    .card {
+        background-color: hsl(244, 38%, 16%);
+        height: 200px;
+        width: 300px;
+        margin: 100px auto;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+        display: flex;
+        border-radius: 10px;
+        line-height: 0.6rem;
+      }
+      .image {
+        background-image: url("../images/image-header-desktop.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        min-width: 600px;
+        position: relative;
+      }
+      .text {
+        width: 100%;
+        padding: 40px 120px;
+        line-height: 1.6rem;
+      }
+
+}
+
 /* attribution */
 .attribution {
   font-size: 11px;
