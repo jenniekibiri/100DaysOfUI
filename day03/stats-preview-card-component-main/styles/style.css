@@ -1,0 +1,67 @@
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px !important;
+    font-family:'Inter', sans-serif;
+    font-weight:400;
+    line-height: 1.6rem;
+    color: white;
+  
+
+}
+.card{
+  background-color: hsl(244, 38%, 16%);
+  height: 400px;
+  width: 1200px;
+  margin: 100px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+  display: flex;
+  border-radius: 10px;
+  line-height: 1.6rem;
+}
+.text{
+    width: 50%;
+    padding: 40px 120px;
+    line-height: 1.6rem;
+}
+.muted{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+   
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    
+   }
+.image{
+ background-image: url("../images/image-header-desktop.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 400px;
+ min-width: 600px;
+ position: relative;
+}
+#color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%);
+    opacity: 0.6;
+ }
+
+.insights{
+    color: hsl(277, 64%, 61%)
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+color: hsla(0, 0%, 100%, 0.6);
+margin-top: 150px;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
