@@ -1,0 +1,82 @@
+@import url(https://fonts.google.com/specimen/Libre+Franklin);
+*{
+margin: 0;
+}
+body {
+  height: 70vh;
+  font-family: "Libre Franklin";
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+}
+.text {
+  color: hsl(0, 0%, 59%);
+  font-size: 32px;
+  font-weight: 300;
+}
+.soon {
+  color: black;
+
+  font-weight: 600;
+}
+.subscribe {
+  text-align: center;
+ margin-bottom: 20px;
+  color: hsl(0, 0%, 9%);
+}
+.input{
+  
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: hsl(0, 0%, 59%) solid 1px;
+}
+.button{
+padding: 10px 20px;
+border: none;
+border-radius: 30px;
+color: white;
+text-align: center;
+background-color:hsl(223, 87%, 63%);
+}
+
+.call-to-action{
+    margin-top: 5px;
+}
+.image-wrapper{
+    margin-top: 3%;
+    display: flex;
+justify-content: center; 
+}
+.image{
+    height: auto;
+    width: 30%;
+   
+}
+.social-media{
+    display: flex;
+    margin:20px 0px;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+.icons{
+    padding: 8px;
+    background-color: white;
+    z-index: 5;
+    align-items: center;
+    box-shadow: black;
+    margin: 10px;
+    border: hsl(0, 0%, 59%) solid 1px;
+    color:hsl(223, 87%, 63%) ;
+    border-radius: 50%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
