@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Libre+Franklin);
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 *{
 margin: 0;
 }
@@ -11,10 +11,15 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 4%;
+  padding: auto;
+}
+.logo{
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 .text {
   color: hsl(0, 0%, 59%);
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 300;
 }
 .soon {
@@ -63,15 +68,27 @@ justify-content: center;
   
 }
 .icons{
-    padding: 8px;
+    padding:10px 10px;
+    height: 20px;
+    width: 20px;
     background-color: white;
     z-index: 5;
-    align-items: center;
+    margin-top: 10em;
+    display: flex;
+   justify-content: center;
+   
     box-shadow: black;
     margin: 10px;
     border: hsl(0, 0%, 59%) solid 1px;
     color:hsl(223, 87%, 63%) ;
     border-radius: 50%;
+}
+
+.footer{
+  color:hsl(0, 0%, 59%);
+  margin-bottom: 5px;
+  font-size: 13px;
+  
 }
 .attribution {
   font-size: 11px;
@@ -79,4 +96,51 @@ justify-content: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+/* media queries */
+@media (max-width:768px) {
+  .call-to-action{
+    margin-top: 5px;
+    margin: 10px auto;
+    padding: 10px auto;
+}
+  .input{
+  
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: hsl(0, 0%, 59%) solid 1px;
+    width: 80%;
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: center;
+}
+.button{
+padding: 10px 30px;
+border: none;
+display: flex;
+justify-content: center;
+width: 100%;
+border-radius: 30px;
+color: white;
+text-align: center;
+background-color:hsl(223, 87%, 63%);
+}
+.image{
+  height: auto;
+  width: 80%;
+ 
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  padding:4px;
+}
+  
+.text {
+  color: hsl(0, 0%, 59%);
+  font-size: 20px;
+  font-weight: 300;
+}
 }
