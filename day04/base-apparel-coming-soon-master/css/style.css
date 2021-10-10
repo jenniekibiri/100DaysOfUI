@@ -7,9 +7,9 @@ body {
 }
 
 .card {
-  height: 90vh;
+  height: 80vh;
   width: 180vh;
-  margin: 10px auto;
+  margin: 45px auto;
   z-index: 3;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
   display: flex;
@@ -98,3 +98,5 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
