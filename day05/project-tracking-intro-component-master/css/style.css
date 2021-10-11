@@ -7,8 +7,12 @@
   display: flex;
   flex-direction: row;
 }
-i nav {
+
+ nav {
   padding: 15px 0;
+}
+.menu{
+  display: none;
 }
 
 nav ul {
@@ -140,4 +144,80 @@ font-family: 'Barlow';
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+
+  .card {
+    height: 100%;
+    width: 100%;
+    margin: 30px auto;
+    z-index: 3;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: row;
+  }
+  nav{
+    display: none;
+  }
+  .menu{
+    display: block;
+    display: flex;
+    margin: 40px 20px 20px 0px;
+    justify-content: flex-end;
+  }
+
+  .bg{
+    margin-top: 20%;
+    z-index: 2;
+    min-width: 100%;
+     box-shadow: 0 0px 0px hsl(230, 11%, 40%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  position: relative;
+    background-image: url("../images/illustration-devices.svg");
+}
+  .small-heading{
+    display: flex;
+    flex-direction: row;
+    color: hsl(231, 7%, 65%);
+    font-size: 12px;
+    font-weight:300;
+     margin-top: 150px;
+    font-family: 'Barlow Condensed';
+}
+.btn {
+  background-color:hsl(230, 29%, 20%);
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.wrapper{
+  padding: 10px;
+}
+.dashboard{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  
+  text-align: center;
+  padding: 4px 10px;
+  width: 100%;
+}
+.big-heading{
+  color:hsl(230, 11%, 20%) ;
+  font-weight: 600;
+  font-family: 'Barlow Condensed';
+  font-size: 30px;
+  width: 100px;
+  padding: 0;
+}
 }
