@@ -1,4 +1,112 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
-background-color: red;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5% auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  height: 75vh;
+  width: 30%;
+  border-radius: 10px;
+  z-index: 10px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+}
+
+h1 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+}
+
+.price {
+  background-color: #7280a7;
+  opacity: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 80%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  -webkit-box-flex: 0.4;
+      -ms-flex-positive: 0.4;
+          flex-grow: 0.4;
+}
+
+.submit-btn {
+  background-color: #3829e0;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin: 10px 20%;
+  border-radius: 10px;
+  padding: 10px 40px;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+  z-index: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cancel-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
+  font-weight: bold;
+  margin: 20px 20%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */
