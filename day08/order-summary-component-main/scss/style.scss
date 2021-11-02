@@ -15,25 +15,47 @@ body {
    margin: 5% auto;
   justify-content: center;
   background-color: white;
-  height: 75vh;
-  width: 30%;
+  height: 100%;
+  width: 23%;
   border-radius: 10px;
   z-index: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
+
 }
-h1 {
-  padding: 10px;
+.icon{
+margin: 10px;
 }
-p {
-  padding: 10px;
+
+
+.card-body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   h1 {
+      padding: 10px;
+      color: hsl(223, 47%, 23%);
+    }
+    p {
+      padding: 10px;
+      color:hsl(224, 23%, 55%);
+      font-weight:500;
+      font-size: 16px;
+      text-align: center;
+      line-height: 25px;
+      padding: auto;
+    }
 }
+
+
 .price {
-  background-color: hsl(224, 23%, 55%);
-  opacity: 70%;
+  background-color: hsl(225, 100%, 98%);
+  
   display: flex;
   margin: 10px auto;
   border-radius: 10px;
   width: 80%;
+justify-content: space-around;
   flex-direction: row;
   align-items: center;
 
@@ -41,20 +63,29 @@ p {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    flex-grow: 0.4;
+
+
+  }
+  p{
+     color: black;
   }
 }
-
+.change{
+   color: hsl(245, 75%, 52%);
+   text-decoration: underline;
+}
 .submit-btn {
   background-color: hsl(245, 75%, 52%);
   border: none;
   color: white;
   font-weight: bold;
-  margin: 10px 20%;
+  margin: 10px auto;
   border-radius: 10px;
-  padding: 10px 40px;
+  padding:10px 40px;
+  width:80%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
   z-index: 10px;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -62,9 +93,11 @@ a {
 .cancel-btn {
   display: flex;
   justify-content: center;
-  color: black;
+  color: hsl(224, 23%, 55%);
   font-weight: bold;
   margin: 20px 20%;
+  cursor: pointer;
+
   
 }
 
