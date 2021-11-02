@@ -24,31 +24,59 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  height: 75vh;
-  width: 30%;
+  height: 100%;
+  width: 23%;
   border-radius: 10px;
   z-index: 10px;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
 }
 
-h1 {
-  padding: 10px;
+.icon {
+  margin: 10px;
 }
 
-p {
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-body h1 {
   padding: 10px;
+  color: #1f2f56;
+}
+
+.card-body p {
+  padding: 10px;
+  color: #7280a7;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+  padding: auto;
 }
 
 .price {
-  background-color: #7280a7;
-  opacity: 70%;
+  background-color: #f5f7ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 10px auto;
   border-radius: 10px;
   width: 80%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -67,9 +95,15 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
-  -webkit-box-flex: 0.4;
-      -ms-flex-positive: 0.4;
-          flex-grow: 0.4;
+}
+
+.price p {
+  color: black;
+}
+
+.change {
+  color: #3829e0;
+  text-decoration: underline;
 }
 
 .submit-btn {
@@ -83,6 +117,7 @@ p {
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
   z-index: 10px;
+  cursor: pointer;
 }
 
 a {
@@ -96,9 +131,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: black;
+  color: #7280a7;
   font-weight: bold;
   margin: 20px 20%;
+  cursor: pointer;
 }
 
 .attribution {
