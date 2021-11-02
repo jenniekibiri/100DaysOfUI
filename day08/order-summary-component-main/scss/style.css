@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 * {
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #e0e8ff;
+  font-family: "Red Hat Display";
 }
 
 .card {
@@ -32,10 +35,6 @@ body {
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
 }
 
-.icon {
-  margin: 10px;
-}
-
 .card-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,9 +51,11 @@ body {
           justify-content: center;
 }
 
-.card-body h1 {
+.card-body h2 {
   padding: 10px;
   color: #1f2f56;
+  margin: 5px;
+  font-weight: 300px;
 }
 
 .card-body p {
@@ -86,6 +87,11 @@ body {
           align-items: center;
 }
 
+.price .icon {
+  margin: 0px 10px;
+  width: 30px;
+}
+
 .price .text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,16 +100,24 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 10px;
+  padding: 8px;
 }
 
 .price p {
   color: black;
 }
 
+@media (max-width: 768px) {
+  .price {
+    font-size: 12px;
+  }
+}
+
 .change {
   color: #3829e0;
   text-decoration: underline;
+  font-size: 12px;
+  margin-right: 2px;
 }
 
 .submit-btn {
@@ -119,6 +133,17 @@ body {
           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
   z-index: 10px;
   cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3829e0;
+  opacity: 70%;
+}
+
+@media (max-width: 768px) {
+  .submit-btn {
+    font-size: 10px;
+  }
 }
 
 a {

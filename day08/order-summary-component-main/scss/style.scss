@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -7,12 +9,13 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display";
 }
 
 .card {
   display: flex;
   flex-direction: column;
-   margin: 5% auto;
+  margin: 5% auto;
   justify-content: center;
   background-color: white;
   height: 100%;
@@ -20,60 +23,66 @@ body {
   border-radius: 10px;
   z-index: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
-
-}
-.icon{
-margin: 10px;
 }
 
-
-.card-body{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   h1 {
-      padding: 10px;
-      color: hsl(223, 47%, 23%);
-    }
-    p {
-      padding: 10px;
-      color:hsl(224, 23%, 55%);
-      font-weight:500;
-      font-size: 16px;
-      text-align: center;
-      line-height: 25px;
-      padding: auto;
-    }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    padding: 10px;
+    color: hsl(223, 47%, 23%);
+    margin: 5px;
+    
+    font-weight: 300px;
+  }
+  p {
+    padding: 10px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 25px;
+    padding: auto;
+  }
 }
-
 
 .price {
   background-color: hsl(225, 100%, 98%);
-  
   display: flex;
   margin: 10px auto;
   border-radius: 10px;
   width: 80%;
-justify-content: space-around;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  .icon {
+    margin: 0px 10px;
+    width: 30px;
+  }
 
   .text {
     display: flex;
+    
     flex-direction: column;
-    padding: 10px;
-
-
+    padding: 8px;
   }
-  p{
-     color: black;
+  p {
+    color: black;
+    
   }
+  @media (max-width: 768px) {
+   font-size: 12px;
+   }
 }
-.change{
-   color: hsl(245, 75%, 52%);
-   text-decoration: underline;
+.change {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+font-size: 12px;
+margin-right: 2px;
 }
+
 .submit-btn {
   background-color: hsl(245, 75%, 52%);
   border: none;
@@ -81,11 +90,19 @@ justify-content: space-around;
   font-weight: bold;
   margin: 10px auto;
   border-radius: 10px;
-  padding:10px 40px;
-  width:80%;
+  
+  padding: 10px 40px;
+  width: 80%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
   z-index: 10px;
   cursor: pointer;
+  &:hover {
+   background-color: hsl(245, 75%, 52%);
+   opacity: 70%;
+  }
+  @media (max-width: 768px) {
+   font-size: 10px;
+   }
 }
 a {
   text-decoration: none;
@@ -97,8 +114,6 @@ a {
   font-weight: bold;
   margin: 20px 20%;
   cursor: pointer;
-
-  
 }
 
 .attribution {
